@@ -39,7 +39,7 @@ const TextEditor = () => {
   }, []);
 
   useEffect(() => {
-    const s = io("http://localhost:3000");
+    const s = io("http://localhost:3001");
     setSocket(s);
     s.on("connect", () => {
       console.log("connected");
